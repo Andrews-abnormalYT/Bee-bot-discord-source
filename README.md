@@ -1,0 +1,84 @@
+<h1 align="center">
+  A Simple Discord Bot
+  <br>
+</h1>
+
+<h3 align=center>A discord bot built with <a href=https://github.com/discordjs/discord.js>discord.js</a></h3>
+
+
+<div align=center>
+
+  <a href="https://github.com/discordjs">
+    <img src="https://img.shields.io/badge/discord.js-v12.3.1-blue.svg?logo=npm" alt="shield.png">
+  </a>
+
+  <a href="https://github.com/sabattle/CalypsoBot/blob/develop/LICENSE">
+    <img src="https://img.shields.io/badge/license-GNU%20GPL%20v3-green" alt="shield.png">
+  </a>
+
+</div>
+
+<p align="center">
+  <a href="#about">About</a>
+  •
+  <a href="#features">Features</a>
+  •
+  <a href="#installation">Installation</a>
+  •
+  <a href="#setting-up">Setting Up</a>
+  •
+  <a href="#license">License</a>
+</p>
+
+## About
+
+This is a very simple and open source Discord bot. It comes with a variety of commands and settings that can be tailored to your server's specific needs. It's codebase also serves as a base framework to easily create more advanced Discord bots of all kinds.
+
+If you liked this repository, feel free to leave a star ⭐
+
+## Features
+
+  * **Moderation:** Commands such as `kick`, `ban` and `mute` to assist your moderator staff
+  * **Fun & Games:** Tons of fun commands like `inspire`, `slap`, `hug` , `kiss` and more
+  * **Information:** Commands like `userinfo` and `serverinfo` for general utility
+
+It also comes packed with a few extra features, such as:
+
+  * **Auto role** assignment
+  * **Welcome messages** and **farewell messages**
+  * **Logging** for mod commands and various events
+
+
+## Installation
+Here's how to install the bot and host it
+
+First, you'll have to clone this repo:
+```
+git clone https://github.com/Sushipie/Simple-Discord-Bot
+```
+After cloning, run:
+```
+npm install
+```
+to snag all of the dependencies. Of course, you need [node](https://nodejs.org/en/) installed. I also strongly recommend [nodemon](https://www.npmjs.com/package/nodemon) as it makes testing *much* easier.
+
+## Setting Up
+
+You have to create a `config.json` file in order to run the bot (you can use the example file provided as a base). Your file should look something like this:
+```
+{
+  "prefix": "your_prefix_here",
+  "token": "your_token_here",
+  "tenorKey": "your_tenor_API_key_here",
+}
+```
+Visit the Discord [developer portal](https://discordapp.com/developers/applications/) to create an app and use the client token you are given for the `token` option. The bot uses Tenor's API to post gifs. To get an API key for Tenor, vist:
+
+  
+  * [Tenor API](https://tenor.com/gifapi/)
+
+After your `config.json` file is built, you are pretty much done. Feel free to launch Cordbot using the command `node app.js` or `nodemon app.js`. If on Linux, you can also kick off using the `start.sh` script.
+
+## License
+
+Released under the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
